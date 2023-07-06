@@ -1,1 +1,3 @@
-# Apartment-Management
+# Apartment-Management System
+
+For apartmnent owners 
