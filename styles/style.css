@@ -1,0 +1,11 @@
+body{
+    background-image: url("../assets/login-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+}
+.tranparent-card{
+    background-color: transparent;
+}
