@@ -5,34 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
   <div class="container-fluid">
-  <div class="row justify-content-center align-items-center text-center" style="height: 100vh;">
+
+  <div class="row inside-container justify-content-center align-items-center text-center">
+
     <div class="col-12 col-md-5 col-lg-4">
-    <h1 class="text-primary mb-5">Apartment Management System</h1>
+    <!-- <h1 class="text-primary mb-5">JRC Apartment</h1> -->
+    
+
       <!-- Login Form -->
-      <div class="card transparent-card" style="height: 24rem;">
+      <div class="card transparent-card" >
+      <center><img src="assets/logo2.png" class="img-responsive" alt="Logo" width="300px"></center>
       <div class="card-body">         
-        <form>
-          <h2 class="text-center mb-2">Welcome</h2>
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div>
-          
-          <button type="submit" class="btn mt-5 mb-3 btn-primary" style="width: 100%; height: 50px; font-size: 20px;">Login</button>
-          <div class="mb-2 mt-2 form-reset">
-            <a href="#">Forgot Password?</a>
-          </div>
-        </form>
+          <form>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            
+            <button type="submit" class="btn-login mt-3 mb-1">Login</button>
+            <div class="mb-2 mt-1 form-reset">
+              <a href="#" style="text-decoration: none; color:black;">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
       </div>
-</div>
 
       <!-- Login Form End -->
     </div>
