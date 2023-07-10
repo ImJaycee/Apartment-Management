@@ -1,3 +1,11 @@
+<?php
+if(isset($_POST['login'])){
+  header('location:/pages/dashboard.php');
+  exit();
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,17 +32,17 @@
       <div class="card transparent-card" >
       <center><img src="assets/logo2.png" class="img-responsive" alt="Logo" width="300px"></center>
       <div class="card-body">         
-          <form>
+          <form action="" method="POST">
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
               <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
               <label for="floatingPassword">Password</label>
             </div>
             
-            <button type="submit" class="btn-login mt-3 mb-1">Login</button>
+            <button type="submit" class="btn-login mt-3 mb-1" name="login" value="login">Login</button>
             <div class="mb-2 mt-1 form-reset">
               <a href="#" style="text-decoration: none; color:black;">Forgot Password?</a>
             </div>
